@@ -190,27 +190,29 @@
         <div class="form-panel">
           <h3>Escríbanos</h3>
           <p class="sub">Cuéntenos sobre su operación y le contactaremos a la brevedad.</p>
-          <form onsubmit="event.preventDefault(); document.getElementById('confirm').style.display='block'; this.reset();">
+          <form name="contacto" method="POST" data-netlify="true" netlify-honeypot="empresa" onsubmit="return submitContactForm(event);">
+            <input type="hidden" name="form-name" value="contacto">
+            <p style="position:absolute; left:-9999px;"><label>No llenar: <input name="empresa"></label></p>
             <div class="form-row">
               <div>
                 <label for="nombre">Nombre</label>
-                <input id="nombre" type="text" required>
+                <input id="nombre" name="nombre" type="text" required>
               </div>
               <div>
                 <label for="correo">Correo electrónico</label>
-                <input id="correo" type="email" required>
+                <input id="correo" name="correo" type="email" required>
               </div>
             </div>
             <div class="form-row full">
               <div>
                 <label for="asunto">Asunto</label>
-                <input id="asunto" type="text">
+                <input id="asunto" name="asunto" type="text">
               </div>
             </div>
             <div class="form-row full">
               <div>
                 <label for="mensaje">Mensaje</label>
-                <textarea id="mensaje" required></textarea>
+                <textarea id="mensaje" name="mensaje" required></textarea>
               </div>
             </div>
             <button type="submit" class="btn btn-dark">Enviar mensaje</button>
@@ -253,6 +255,36 @@
 </footer>
 
 <script src="content.js"></script>
+<script>
+  function encodeForm(data) {
+    return Object.keys(data)
+      .map(function (k) { return encodeURIComponent(k) + '=' + encodeURIComponent(data[k]); })
+      .join('&');
+  }
+
+  function submitContactForm(event) {
+    event.preventDefault();
+    var form = event.target;
+    var formData = new FormData(form);
+    var payload = {};
+    formData.forEach(function (value, key) { payload[key] = value; });
+
+    fetch('/', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: encodeForm(payload)
+    })
+      .then(function () {
+        document.getElementById('confirm').style.display = 'block';
+        form.reset();
+      })
+      .catch(function () {
+        alert('Hubo un problema enviando el mensaje. Por favor intenta de nuevo o escribe a info@solimek.com.');
+      });
+
+    return false;
+  }
+</script>
 <script>
   function showSection(id) {
     document.querySelectorAll('.page-section').forEach(function (sec) {
