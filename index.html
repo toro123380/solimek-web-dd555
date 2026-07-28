@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Solimek | Sellado y Conexión de Cables de Potencia</title>
+<meta name="description" content="Solimek ofrece soluciones en sellado y conexión de cables con sistemas de penetradores en cabezales de pozo.">
+<link rel="stylesheet" href="styles.css">
+<!-- Este sitio carga sus textos e imágenes desde content.json. Editar ahí, no aquí. -->
+</head>
+<body>
+
+<div class="announce">Soluciones confiables para la seguridad de su operación</div>
+
+<header id="site-header">
+  <div class="header-inner">
+    <a href="#inicio" onclick="showSection('inicio'); return false;"><img class="brand-icon" src="images/logo-icon.png" data-field-src="logo" alt="Solimek"></a>
+    <button class="menu-toggle" aria-label="Abrir menú" onclick="document.getElementById('site-header').classList.toggle('open')">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+    </button>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="#inicio" data-target="inicio" onclick="showSection('inicio'); return false;">Inicio</a></li>
+        <li><a href="#quienes-somos" data-target="quienes-somos" onclick="showSection('quienes-somos'); return false;">Quiénes somos</a></li>
+        <li><a href="#contacto" data-target="contacto" class="nav-cta" onclick="showSection('contacto'); return false;">Contáctenos</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<!-- ================= INICIO ================= -->
+<section id="inicio" class="page-section">
+  <div class="hero">
+    <div class="hero-cables"></div>
+    <div class="hero-inner">
+      <div>
+        <span class="eyebrow" data-field="hero_eyebrow">Ingeniería en sellado de cables de potencia</span>
+        <h1 data-field="hero_title">Soluciones confiables para la seguridad de su operación</h1>
+        <p class="lead" data-field="hero_lead">Diseñamos, fabricamos y probamos sistemas de conexión y sellado para cables de potencia y líneas de control en la industria minero-energética.</p>
+        <div class="hero-ctas">
+          <a href="#contacto" class="btn btn-primary" onclick="showSection('contacto'); return false;" data-field="hero_cta_primary">Solicitar asesoría</a>
+          <a href="#productos" class="btn btn-ghost" onclick="return true;" data-field="hero_cta_secondary">Ver productos</a>
+        </div>
+      </div>
+      <div class="spinner-wrap">
+        <img src="images/logo-icon.png" data-field-src="logo" alt="">
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <section class="section" id="nosotros">
+      <div class="about-grid">
+        <div>
+          <span class="eyebrow-dark">Nosotros</span>
+          <h2 style="margin-bottom:18px;" data-field="about_title">Experiencia técnica al servicio de su operación</h2>
+          <p data-field="about_paragraph_1">Somos una compañía dedicada al desarrollo de productos y equipos para la conexión y sellado de cables de potencia.</p>
+          <p data-field="about_paragraph_2">Contamos con amplia experiencia en investigación y desarrollo, soportada en pruebas de laboratorio, certificaciones, montajes en campo, y registro de patentes de ingeniería mecánica.</p>
+          <p data-field="about_paragraph_3">Tenemos la capacidad de desarrollar sistemas adaptables a la necesidad del cliente, apoyados en el equipo humano y técnico propio de la compañía, dedicados al diseño, fabricación, montaje y servicio al cliente.</p>
+        </div>
+        <div class="stat-row" style="align-self:center;">
+          <div class="stat-card">
+            <div class="num">I+D</div>
+            <div class="label">Investigación &amp; desarrollo</div>
+          </div>
+          <div class="stat-card">
+            <div class="num">100%</div>
+            <div class="label">Diseño a medida</div>
+          </div>
+          <div class="stat-card">
+            <div class="num">CO</div>
+            <div class="label">Fabricación en Colombia</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-tight" id="productos">
+      <div class="section-head">
+        <span class="eyebrow-dark">Productos</span>
+        <h2 data-field="products_title">Sistemas de conexión y sellado</h2>
+        <p data-field="products_subtitle">Componentes diseñados y probados para operar bajo las condiciones más exigentes del sector minero-energético.</p>
+      </div>
+      <div class="card-grid" id="products-list"></div>
+    </section>
+
+    <section class="section section-tight" id="servicios">
+      <div class="section-head">
+        <span class="eyebrow-dark">Servicios</span>
+        <h2 data-field="services_title">Acompañamiento técnico integral</h2>
+        <p data-field="services_subtitle">Desde el diseño conceptual hasta la puesta en marcha y el soporte en campo.</p>
+      </div>
+      <div class="card-grid" id="services-list"></div>
+    </section>
+
+    <section class="section section-tight">
+      <div class="section-head">
+        <span class="eyebrow-dark">En campo</span>
+        <h2>Nuestros equipos en operación</h2>
+      </div>
+      <div class="gallery" id="gallery-list"></div>
+    </section>
+
+    <section class="section" style="padding-top:20px;">
+      <div class="cta-band">
+        <h3 data-field="cta_home_title">¿Tiene un proyecto que requiere sellado de alta presión?</h3>
+        <a href="#contacto" class="btn btn-primary" onclick="showSection('contacto'); return false;" data-field="cta_home_button">Hablar con un especialista</a>
+      </div>
+    </section>
+  </main>
+</section>
+
+<!-- ================= QUIENES SOMOS ================= -->
+<section id="quienes-somos" class="page-section" style="display:none;">
+  <div class="page-hero">
+    <span class="eyebrow">Quiénes somos</span>
+    <h1 data-field="quienes_somos_title">Maestría técnica al servicio de la seguridad industrial</h1>
+  </div>
+
+  <main>
+    <section class="section">
+      <div class="value-grid">
+        <div class="value-card">
+          <h3>Misión</h3>
+          <p data-field="mision">Solimek S.A.S. es una compañía dedicada al desarrollo de productos y equipos para la conexión y sellado de cables de potencia y líneas de control, en la industria minero energética. Nuestra promesa es "Soluciones confiables para la seguridad de su operación".</p>
+        </div>
+        <div class="value-card">
+          <h3>Visión</h3>
+          <p data-field="vision">Para 2025 ser reconocidos como la empresa nacional líder en productos para la conexión y sellado de cables de potencia y líneas de control en Colombia. Diferenciándonos por nuestra maestría técnica, experiencia, confiabilidad y cercanía con el cliente.</p>
+        </div>
+        <div class="value-card">
+          <h3>Política corporativa</h3>
+          <p data-field="politica_resumen">Diseño y desarrollo de productos y equipos para la conexión y sellado de cables, comprometidos con la confiabilidad, el tiempo de entrega, la alta calidad y la prevención de accidentes laborales.</p>
+          <p>Ver el detalle completo abajo.</p>
+        </div>
+      </div>
+
+      <div class="policy-block">
+        <span class="eyebrow-dark">Detalle</span>
+        <h2 style="margin-bottom:16px;">Política corporativa</h2>
+        <div data-field="politica_completa" data-field-multiline="true"></div>
+      </div>
+    </section>
+
+    <section class="section" style="padding-top:0;">
+      <div class="cta-band">
+        <h3 data-field="cta_about_title">¿Quiere conocer cómo podemos apoyar a su equipo técnico?</h3>
+        <a href="#contacto" class="btn btn-primary" onclick="showSection('contacto'); return false;" data-field="cta_about_button">Escríbanos</a>
+      </div>
+    </section>
+  </main>
+</section>
+
+<!-- ================= CONTACTO ================= -->
+<section id="contacto" class="page-section" style="display:none;">
+  <div class="page-hero">
+    <div class="brand-mark on-dark">
+      <img src="images/logo-icon.png" data-field-src="logo" alt="Solimek">
+      <span>SOLIMEK</span>
+    </div>
+  </div>
+
+  <main>
+    <section class="section">
+      <div class="contact-grid">
+        <div class="contact-cards">
+          <div class="contact-card">
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+            <div>
+              <h4>Oficina</h4>
+              <p data-field="direccion">Carrera 52 # 7 sur 20, Oficina 201, Medellín, Antioquia</p>
+            </div>
+          </div>
+          <div class="contact-card">
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3.1-8.6A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .3 2 .6 2.9a2 2 0 0 1-.5 2.1L8 10a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.5c.9.3 1.9.5 2.9.6a2 2 0 0 1 1.7 2Z"/></svg>
+            <div>
+              <h4>Teléfono</h4>
+              <p><span data-field="telefono_1">314 318 8339</span><br><span data-field="telefono_2">318 571 2475 · 318 487 2005</span></p>
+            </div>
+          </div>
+          <div class="contact-card">
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+            <div>
+              <h4>Correo — información o PQRS</h4>
+              <p><a href="mailto:info@solimek.com" data-field="correo_1" data-field-mailto="true">info@solimek.com</a><br><a href="mailto:servicioalcliente@solimek.com" data-field="correo_2" data-field-mailto="true">servicioalcliente@solimek.com</a></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-panel">
+          <h3>Escríbanos</h3>
+          <p class="sub">Cuéntenos sobre su operación y le contactaremos a la brevedad.</p>
+          <form onsubmit="event.preventDefault(); document.getElementById('confirm').style.display='block'; this.reset();">
+            <div class="form-row">
+              <div>
+                <label for="nombre">Nombre</label>
+                <input id="nombre" type="text" required>
+              </div>
+              <div>
+                <label for="correo">Correo electrónico</label>
+                <input id="correo" type="email" required>
+              </div>
+            </div>
+            <div class="form-row full">
+              <div>
+                <label for="asunto">Asunto</label>
+                <input id="asunto" type="text">
+              </div>
+            </div>
+            <div class="form-row full">
+              <div>
+                <label for="mensaje">Mensaje</label>
+                <textarea id="mensaje" required></textarea>
+              </div>
+            </div>
+            <button type="submit" class="btn btn-dark">Enviar mensaje</button>
+            <div id="confirm" class="confirm-msg">¡Tus datos se enviaron con éxito!</div>
+          </form>
+          <p style="margin-top:18px; font-size:13px; color:var(--ink-soft);">¿Prefieres escribir directo? Envíanos un correo a <a href="mailto:info@solimek.com" style="color:var(--blue);" data-field="correo_1" data-field-mailto="true">info@solimek.com</a>.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+</section>
+
+<footer>
+  <div class="footer-inner">
+    <div>
+      <div class="footer-brand">
+        <img src="images/logo-icon.png" data-field-src="logo" alt="">
+        <span>SOLIMEK</span>
+      </div>
+      <p style="max-width:280px; font-size:14px; color:#b9c6dc;" data-field="hero_title">Soluciones confiables para la seguridad de su operación.</p>
+    </div>
+    <div>
+      <h5>Navegación</h5>
+      <ul>
+        <li><a href="#inicio" onclick="showSection('inicio'); return false;">Inicio</a></li>
+        <li><a href="#quienes-somos" onclick="showSection('quienes-somos'); return false;">Quiénes somos</a></li>
+        <li><a href="#contacto" onclick="showSection('contacto'); return false;">Contáctenos</a></li>
+      </ul>
+    </div>
+    <div>
+      <h5>Contacto</h5>
+      <ul>
+        <li data-field="direccion">Carrera 52 # 7 sur 20, Oficina 201, Medellín, Antioquia</li>
+        <li data-field="telefono_1">314 318 8339</li>
+        <li><a href="mailto:info@solimek.com" data-field="correo_1" data-field-mailto="true">info@solimek.com</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">© 2026 Solimek S.A.S. — Todos los derechos reservados.</div>
+</footer>
+
+<script src="content.js"></script>
+<script>
+  function showSection(id) {
+    document.querySelectorAll('.page-section').forEach(function (sec) {
+      sec.style.display = (sec.id === id) ? '' : 'none';
+    });
+    document.querySelectorAll('.main-nav a[data-target]').forEach(function (a) {
+      a.classList.toggle('active', a.getAttribute('data-target') === id);
+    });
+    window.scrollTo({ top: 0, behavior: 'auto' });
+    history.replaceState(null, '', '#' + id);
+    var header = document.getElementById('site-header');
+    if (header) header.classList.remove('open');
+  }
+
+  (function () {
+    var valid = ['inicio', 'quienes-somos', 'contacto'];
+    var hash = window.location.hash.replace('#', '');
+    showSection(valid.includes(hash) ? hash : 'inicio');
+  })();
+</script>
+</body>
+</html>

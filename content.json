@@ -1,0 +1,63 @@
+{
+  "hero_eyebrow": "Ingeniería en sellado de cables de potencia",
+  "hero_title": "Soluciones confiables para la seguridad de su operación",
+  "hero_lead": "Diseñamos, fabricamos y probamos sistemas de conexión y sellado para cables de potencia y líneas de control en la industria minero-energética.",
+  "hero_cta_primary": "Solicitar asesoría",
+  "hero_cta_secondary": "Ver productos",
+  "logo": "images/logo-icon.png",
+
+  "about_title": "Experiencia técnica al servicio de su operación",
+  "about_paragraph_1": "Somos una compañía dedicada al desarrollo de productos y equipos para la conexión y sellado de cables de potencia.",
+  "about_paragraph_2": "Contamos con amplia experiencia en investigación y desarrollo, soportada en pruebas de laboratorio, certificaciones, montajes en campo, y registro de patentes de ingeniería mecánica.",
+  "about_paragraph_3": "Tenemos la capacidad de desarrollar sistemas adaptables a la necesidad del cliente, apoyados en el equipo humano y técnico propio de la compañía, dedicados al diseño, fabricación, montaje y servicio al cliente.",
+
+  "products_title": "Sistemas de conexión y sellado",
+  "products_subtitle": "Componentes diseñados y probados para operar bajo las condiciones más exigentes del sector minero-energético.",
+  "products": [
+    "Penetrador Power Seal Connector",
+    "Caja de Conectores Nema 7",
+    "Conectores Eléctricos",
+    "Aislamientos Eléctricos",
+    "Empaquetaduras",
+    "Juntas Tóricas (O'Rings)",
+    "Empaques en Materiales Especiales",
+    "Conexiones Roscadas bajo normas especiales"
+  ],
+
+  "services_title": "Acompañamiento técnico integral",
+  "services_subtitle": "Desde el diseño conceptual hasta la puesta en marcha y el soporte en campo.",
+  "services": [
+    "Consultoría y Diseño",
+    "Modelación CAD",
+    "Levantamiento de Planos de Ingeniería",
+    "Asesoría en Sistemas de Sellado de Alta Presión",
+    "Asesoría en Selección de Materiales",
+    "Servicio Técnico",
+    "Pruebas y Ensayos"
+  ],
+
+  "gallery": [
+    "https://static.wixstatic.com/media/50629d_5c6492a44b764f1b825f9b77b4920be6~mv2.jpg",
+    "https://static.wixstatic.com/media/50629d_eed6b19089ec4985833902679210df66~mv2.jpeg",
+    "https://static.wixstatic.com/media/50629d_e0b84ea5d7ba45ad9b3d602d7f59544f~mv2.jpeg",
+    "https://static.wixstatic.com/media/50629d_4b256c33d8374fe78609305fbdf2bb77~mv2.jpg"
+  ],
+
+  "cta_home_title": "¿Tiene un proyecto que requiere sellado de alta presión?",
+  "cta_home_button": "Hablar con un especialista",
+
+  "quienes_somos_title": "Maestría técnica al servicio de la seguridad industrial",
+  "mision": "Solimek S.A.S. es una compañía dedicada al desarrollo de productos y equipos para la conexión y sellado de cables de potencia y líneas de control, en la industria minero energética. Nuestra promesa es \"Soluciones confiables para la seguridad de su operación\".",
+  "vision": "Para 2025 ser reconocidos como la empresa nacional líder en productos para la conexión y sellado de cables de potencia y líneas de control en Colombia. Diferenciándonos por nuestra maestría técnica, experiencia, confiabilidad y cercanía con el cliente.",
+  "politica_resumen": "Diseño y desarrollo de productos y equipos para la conexión y sellado de cables, comprometidos con la confiabilidad, el tiempo de entrega, la alta calidad y la prevención de accidentes laborales.",
+  "politica_completa": "SOLIMEK S.A.S. es una compañía dedicada al diseño y desarrollo de productos y equipos para la conexión y sellado de cables de potencia y líneas de control, que se compromete con la entrega bajo condiciones de confiabilidad, tiempo de entrega, alta calidad y la prevención de accidentes de trabajo, enfermedades laborales y escenarios de emergencia.\n\nNuestro compromiso está enmarcado en mejorar continuamente nuestros productos y servicios, por medio del talento humano, la protección y promoción de la salud de los trabajadores en un ambiente de trabajo seguro, bajo una cultura preventiva y de autocuidado bajo la implementación de estrategias de intervención de riesgos; garantizando el cumplimiento de las especificaciones técnicas de nuestros clientes y el cumplimiento de los requisitos legales establecidos por el estado en relación con la Calidad, Seguridad y Salud en el Trabajo; respaldados con ética y respeto para generar alianzas de largo plazo que propicien ambientes de trabajo internos y externos seguros.\n\nTodos nuestros empleados, colaboradores, contratistas y temporales tendrán la responsabilidad de cumplir con las normas y procedimientos de Calidad, Seguridad y Salud en el Trabajo, con el objeto de asegurar nuestro compromiso.\n\nPara el cumplimiento de la política integral del sistema de gestión, la organización destina los recursos físicos, humanos, técnicos y tecnológicos necesarios.\n\nNuestra innovación aportará a la satisfacción de nuestros clientes, y al desarrollo tecnológico y científico de nuestro entorno.",
+
+  "cta_about_title": "¿Quiere conocer cómo podemos apoyar a su equipo técnico?",
+  "cta_about_button": "Escríbanos",
+
+  "direccion": "Carrera 52 # 7 sur 20, Oficina 201, Medellín, Antioquia",
+  "telefono_1": "314 318 8339",
+  "telefono_2": "318 571 2475 · 318 487 2005",
+  "correo_1": "info@solimek.com",
+  "correo_2": "servicioalcliente@solimek.com"
+}
