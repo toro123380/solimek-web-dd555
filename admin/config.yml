@@ -1,0 +1,71 @@
+backend:
+  name: git-gateway
+  branch: main
+
+# Esto activa el botón "Publicar" para que los cambios queden pendientes de
+# revisión antes de salir en vivo. Si prefieren que se publique al instante,
+# se puede quitar esta línea.
+publish_mode: simple
+
+media_folder: "images/uploads"
+public_folder: "images/uploads"
+
+locale: "es"
+
+collections:
+  - name: "contenido"
+    label: "Contenido del sitio"
+    files:
+      - file: "content.json"
+        label: "Página web completa"
+        name: "content"
+        fields:
+          - { label: "Ícono / logo", name: "logo", widget: "image" }
+
+          - { label: "Frase pequeña arriba del título", name: "hero_eyebrow", widget: "string" }
+          - { label: "Título principal", name: "hero_title", widget: "string" }
+          - { label: "Texto debajo del título", name: "hero_lead", widget: "text" }
+          - { label: "Texto del botón principal", name: "hero_cta_primary", widget: "string" }
+          - { label: "Texto del botón secundario", name: "hero_cta_secondary", widget: "string" }
+
+          - { label: "Título sección Nosotros", name: "about_title", widget: "string" }
+          - { label: "Nosotros — párrafo 1", name: "about_paragraph_1", widget: "text" }
+          - { label: "Nosotros — párrafo 2", name: "about_paragraph_2", widget: "text" }
+          - { label: "Nosotros — párrafo 3", name: "about_paragraph_3", widget: "text" }
+
+          - { label: "Título sección Productos", name: "products_title", widget: "string" }
+          - { label: "Subtítulo sección Productos", name: "products_subtitle", widget: "text" }
+          - label: "Lista de productos"
+            name: "products"
+            widget: "list"
+            field: { label: "Producto", name: "item", widget: "string" }
+
+          - { label: "Título sección Servicios", name: "services_title", widget: "string" }
+          - { label: "Subtítulo sección Servicios", name: "services_subtitle", widget: "text" }
+          - label: "Lista de servicios"
+            name: "services"
+            widget: "list"
+            field: { label: "Servicio", name: "item", widget: "string" }
+
+          - label: "Galería de fotos"
+            name: "gallery"
+            widget: "list"
+            field: { label: "Foto", name: "item", widget: "image" }
+
+          - { label: "Título CTA (final de Inicio)", name: "cta_home_title", widget: "string" }
+          - { label: "Texto del botón CTA (Inicio)", name: "cta_home_button", widget: "string" }
+
+          - { label: "Título de Quiénes somos", name: "quienes_somos_title", widget: "string" }
+          - { label: "Misión", name: "mision", widget: "text" }
+          - { label: "Visión", name: "vision", widget: "text" }
+          - { label: "Política corporativa (resumen corto)", name: "politica_resumen", widget: "text" }
+          - { label: "Política corporativa (texto completo)", name: "politica_completa", widget: "text", hint: "Deja una línea en blanco entre párrafos." }
+
+          - { label: "Título CTA (final de Quiénes somos)", name: "cta_about_title", widget: "string" }
+          - { label: "Texto del botón CTA (Quiénes somos)", name: "cta_about_button", widget: "string" }
+
+          - { label: "Dirección", name: "direccion", widget: "string" }
+          - { label: "Teléfono principal", name: "telefono_1", widget: "string" }
+          - { label: "Teléfonos adicionales", name: "telefono_2", widget: "string" }
+          - { label: "Correo principal", name: "correo_1", widget: "string" }
+          - { label: "Correo servicio al cliente", name: "correo_2", widget: "string" }
