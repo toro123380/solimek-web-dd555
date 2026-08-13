@@ -659,3 +659,18 @@ html, body { max-width: 100%; overflow-x: hidden; }
 }
 
 p { text-align: justify; text-align-last: left; }
+
+
+/* ---------- Brand name next to logo: now on desktop too, no underline ---------- */
+.header-inner > a:first-child { text-decoration: none; }
+.header-inner > a:first-child::after {
+  content: "Solimek";
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
+  font-weight: 800;
+  font-size: 20px;
+  letter-spacing: 0;
+  text-transform: none;
+  color: #111111;
+  margin-left: 8px;
+  text-decoration: none;
+}
