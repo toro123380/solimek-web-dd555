@@ -682,3 +682,17 @@ p { text-align: justify; text-align-last: left; }
   align-items: center;
   flex-direction: row;
 }
+
+
+/* ---------- Bigger logo + brand name in header (desktop & mobile) ---------- */
+.header-inner > a:first-child img {
+  height: 56px;
+}
+.header-inner > a:first-child::after {
+  font-size: 32px;
+  margin-left: 12px;
+}
+@media (max-width: 560px) {
+  .header-inner > a:first-child img { height: 42px; }
+  .header-inner > a:first-child::after { font-size: 24px; margin-left: 8px; }
+}
